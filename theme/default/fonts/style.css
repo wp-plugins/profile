@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'profile_icon';
+	src:url('fonts/profile_icon.eot?vkur5');
+	src:url('fonts/profile_icon.eot?#iefixvkur5') format('embedded-opentype'),
+	url('fonts/profile_icon.woff?vkur5') format('woff'),
+	url('fonts/profile_icon.ttf?vkur5') format('truetype'),
+	url('fonts/profile_icon.svg?vkur5#profile_icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="profileicon-"]:before, [class*=" profileicon-"]:before {
+	font-family: 'profile_icon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.profileicon-chevron-right:before {
+	content: "\e601";
+}
+
+.profileicon-eye:before {
+	content: "\e000";
+}
+
+.profileicon-mail:before {
+	content: "\e002";
+}
+
+.profileicon-link:before {
+	content: "\e005";
+}
+
+.profileicon-bell:before {
+	content: "\e006";
+}
+
+.profileicon-lock:before {
+	content: "\e007";
+}
+
+.profileicon-clock:before {
+	content: "\e014";
+}
+
+.profileicon-cog:before {
+	content: "\e023";
+}
+
+.profileicon-square-plus:before {
+	content: "\e044";
+}
+
+.profileicon-square-minus:before {
+	content: "\e045";
+}
+
+.profileicon-square-check:before {
+	content: "\e046";
+}
+
+.profileicon-square-cross:before {
+	content: "\e047";
+}
+
+.profileicon-head:before {
+	content: "\e074";
+}
+
+.profileicon-globe:before {
+	content: "\e078";
+}
+
+.profileicon-share:before {
+	content: "\e081";
+}
+
+.profileicon-marquee:before {
+	content: "\e082";
+}
+
+.profileicon-marquee-plus:before {
+	content: "\e083";
+}
+
+.profileicon-marquee-minus:before {
+	content: "\e084";
+}
+
+.profileicon-power:before {
+	content: "\e086";
+}
+
+.profileicon-star:before {
+	content: "\e093";
+}
+
+.profileicon-plus:before {
+	content: "\e114";
+}
+
+.profileicon-minus:before {
+	content: "\e115";
+}
+
+.profileicon-check:before {
+	content: "\e116";
+}
+
+.profileicon-cross:before {
+	content: "\e117";
+}
+
+.profileicon-profile_logo:before {
+	content: "\e600";
+}
+
