@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?business=rah12@live.com&cmd=_
 Tags: community, profile, frontend, buddypress
 Requires at least: 4.1
 Tested up to: 4.1
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,4 +42,8 @@ Its very easy to install the plugin.
 
 
 == Changelog ==
+
+= 0.0.5 =
+
+* Added post_name when creating base page
 

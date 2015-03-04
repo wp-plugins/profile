@@ -45,6 +45,7 @@ class Profile_Hooks
     public function get_avatar($avatar, $id_or_email, $size, $default, $alt) {
 
         if (!empty($id_or_email)) {
+
             if (is_object($id_or_email)) {
                 $allowed_comment_types = apply_filters('get_avatar_comment_types', array(
                     'comment'
@@ -52,19 +53,22 @@ class Profile_Hooks
                 if (!empty($id_or_email->comment_type) && !in_array($id_or_email->comment_type, (array)$allowed_comment_types)) {
                     return $avatar;
                 }
-                
+
                 if (!empty($id_or_email->user_id)) {
                     $id          = (int)$id_or_email->user_id;
                     $user        = get_userdata($id);
                     if ($user) {
                         $id_or_email = $user->ID;
                     }
+                }else{
+                    $id_or_email = 0;
                 }
             } 
             elseif (is_email($id_or_email)) {
                 $u           = get_user_by('email', $id_or_email);
                 $id_or_email = $u->ID;
             }
+
             
             $resized     = profile_get_avatar($id_or_email, $size);
             

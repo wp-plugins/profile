@@ -38,6 +38,7 @@ function profile_activate($network_wide) {
         $args['post_content']       = "[profile]";
         $args['post_status']        = "publish";
         $args['post_title']         = "PROFILE_TITLE";
+        $args['post_name']          = "profile";
         $args['comment_status']     = 'closed';
         
         // now create post

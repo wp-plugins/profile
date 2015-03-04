@@ -141,7 +141,7 @@ class Profile_Theme
                     $posts->the_post();
                 include profile_get_theme_location('content-post.php');
                 endwhile;
-                echo '<div class="show-all">' . __('Show all', 'profile') . ' <a href="' . profile_get_link_to('my-posts') . '">' . __('posts by', 'profile') . '</a> ' . profile_display_name(profile_get_current_user()) . ' &rarr;</div>';
+                echo '<div class="show-all">' . __('Show all', 'profile') . ' <a href="' . profile_get_link_to('posts') . '">' . __('posts by', 'profile') . '</a> ' . profile_display_name(profile_get_current_user()) . ' &rarr;</div>';
             } 
             else {
                 _e('No posts were written by this user.', 'profile');
