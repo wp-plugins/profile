@@ -41,7 +41,7 @@ function add_query_var($wp) {
     if(!empty($wp->query_vars['profile_user_login'])){
         $user = get_user_by('login', sanitize_text_field($wp->query_vars['profile_user_login']));
         $wp->set_query_var('profile_user', $user->ID);
-    }else{
+    }elseif(isset($wp->query_vars['profile_user'])){
         $user = get_user_by('id', (int)$wp->query_vars['profile_user']);
         $wp->set_query_var('profile_user_login', $user->ID);
     }

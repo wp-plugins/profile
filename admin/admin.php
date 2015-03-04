@@ -218,16 +218,6 @@ class Profile_Admin {
             update_option('profile_opt', $options);
             profile_opt('profile_flush', 'true');
         }
-
-        // If creating a new question then first set a question ID
-
-        global $typenow;
-
-        global $pagenow;
-
-        if (in_array($pagenow, array('post-new.php')) && $typenow == 'answer' && !isset($_GET['post_parent'])) {
-            wp_redirect(admin_url('admin.php?page=profile_select_question'));
-        }
     }
 
     public function profile_save_options() {		

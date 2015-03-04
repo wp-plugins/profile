@@ -15,7 +15,7 @@
      * Plugin URI:        http://wp3.in
      * Description:       Simple profile for WordPress
      * Donate link: https://www.paypal.com/cgi-bin/webscr?business=rah12@live.com&cmd=_xclick&item_name=Donation%20to%20Profile%20development
-     * Version:           0.0.5
+     * Version:           0.0.6
      * Author:            Rahul Aryan
      * Author URI:        http://wp3.in
      * Text Domain:       profile
@@ -38,7 +38,7 @@ if (!class_exists('Profile')) {
     class Profile
     {
 
-        private $_plugin_version = '0.0.5';
+        private $_plugin_version = '0.0.6';
 
         private $_plugin_path;
 

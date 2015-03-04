@@ -30,7 +30,7 @@ function init_profile_assets() {
         wp_enqueue_style('profile-fonts', profile_get_theme_url('fonts/style.css') , array() , PROFILE_VERSION);
         wp_enqueue_style('profile-style', profile_get_theme_url('css/main.min.css') , array() , PROFILE_VERSION);
         
-        if (is_profile()) {
+        //if (is_profile()) {
             wp_enqueue_script('jquery');
             wp_enqueue_script('jquery-form', array(
                 'jquery'
@@ -40,7 +40,7 @@ function init_profile_assets() {
             wp_enqueue_script('initial', profile_get_theme_url('js/initial.min.js') , 'jquery', PROFILE_VERSION);
             do_action('profile_enqueue');
             wp_enqueue_style('profile-overrides', profile_get_theme_url('css/overrides.css') , array() , PROFILE_VERSION);
-        }
+       // }
     }
 
 /*add_action( 'widgets_init', 'profile_widgets_positions' );

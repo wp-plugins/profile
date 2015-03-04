@@ -98,7 +98,7 @@ class Profile_Theme
         if(!defined('AP_VERSION'))
             return;
 
-        $args = array('post_type' => array('question', 'answer'), 'author' => profile_get_current_user(), 'showposts' => 5);
+        $args = array('post_type' => array('question', 'answer'), 'author' => profile_get_current_user(), 'showposts' => 5, 'post_status' => 'publish');
         
         $posts = new WP_Query($args);
         
@@ -124,7 +124,7 @@ class Profile_Theme
     }
 
     public function user_posts($user_id) {
-        $args = array('post_type' => 'post', 'author' => profile_get_current_user(), 'showposts' => 5);
+        $args = array('post_type' => 'post', 'author' => profile_get_current_user(), 'showposts' => 5, 'post_status' => 'publish');
         
         $posts = new WP_Query($args);
         
